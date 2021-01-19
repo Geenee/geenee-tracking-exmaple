@@ -109,6 +109,8 @@ const App = () => {
       sceneRef.current?.render(rototranslation);
       sceneRef.current?.show();
       console.log('detected target: ' + targetID);
+    } else {
+      sceneRef.current?.hide();
     }
     renderVideoFrame(imageData);
   }
