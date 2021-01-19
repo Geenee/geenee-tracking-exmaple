@@ -1,0 +1,41 @@
+// Disables iOS' inertial scrolling.
+:global(body) {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+:global(#root) {
+  background-color: #1c1c1c;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+video {
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100vw;
+}

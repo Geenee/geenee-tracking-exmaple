@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "outDir": "./public/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es6",
+    "downlevelIteration": true,
+    "allowJs": true,
+    "jsx": "react",
+    "lib": [
+      "DOM",
+      "es6"
+    ],
+    "paths": {
+      "~/*": [
+        "./*"
+      ]
+    },
+    "typeRoots": [
+      "../../node_modules/@types",
+      "./types"
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
