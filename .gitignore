@@ -6,6 +6,5 @@
 node_modules
 yarn.lock
 
-lib
 public
 dist/**
