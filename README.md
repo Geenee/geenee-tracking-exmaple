@@ -44,6 +44,8 @@ onStampUpdate(imageData: ImageData, targetID: number, rototranslation: [], focal
 	...
 }
 
+...
+
 stamp.on('geenee-tracker-update', onStampUpdate)
 ```
 
