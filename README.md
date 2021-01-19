@@ -1,7 +1,5 @@
 # Stamp User Guide
 
-# Quick Start Guide
-
 ### Create new project.
 
 ![ui_layers](https://eu-central-1-redbull-attachments-upload.geenee.io/attachments/7ca9f99b-92c5-4d74-9db8-c8f92bb1cfc2/fc78aa9b-be37-4fb6-973d-f73d2294aa30/ui_layers.png)
