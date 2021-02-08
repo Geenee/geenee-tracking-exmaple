@@ -173,7 +173,6 @@ module.exports = {
   devtool: 'eval-source-map',
   devServer: {
     contentBase: [path.join(__dirname, 'dist'), path.join(__dirname, './node_modules/@geenee/geetracker/dist/wasm')],
-    // contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 7777
   },
