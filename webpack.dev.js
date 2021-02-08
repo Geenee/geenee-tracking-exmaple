@@ -1,10 +1,11 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const JavaScriptObfuscator = require('webpack-obfuscator');
+// const JavaScriptObfuscator = require('webpack-obfuscator');
 const mode = 'development';
 const autoprefixer = require('autoprefixer');
 const BASE_PATH = JSON.stringify('/');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src'],
@@ -162,11 +163,17 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
     }),
-    // new JavaScriptObfuscator()
+    // new JavaScriptObfuscator(),
+    new CopyPlugin({
+      patterns: [
+        { from: "./node_modules/@geenee/geetracker/dist/wasm", to: "" }
+      ]
+    }),
   ],
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: [path.join(__dirname, 'dist'), path.join(__dirname, './node_modules/@geenee/geetracker/dist/wasm')],
+    // contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 7777
   },
